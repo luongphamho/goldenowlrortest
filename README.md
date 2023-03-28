@@ -2,7 +2,7 @@
 # G-Sneaker
 This is my Submission for web developer intern assignment at [Golden Owl](https://goldenowl.asia)
 
-![Screenshot](./screenshot/result.jpg)
+![Screenshot](./screenshot/result.png)
 
 Link deploy front-end: https://goldenowlrortest.vercel.app
 
