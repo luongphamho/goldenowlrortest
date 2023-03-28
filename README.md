@@ -1,16 +1,16 @@
 # README
-
 # G-Sneaker
-
-Things you may want to cover:
-
 This is my Submission for web developer intern assignment at [Golden Owl](https://goldenowl.asia)
 
-This is the instruction for web developer intern assignment at [Golden Owl](https://goldenowl.asia). You will build a simple shopping cart.
+![Screenshot](./screenshots/Screenshot 2023-03-28 235643.png)
 
-![Screenshot]()
+Link deploy front-end: https://goldenowlrortest.vercel.app
 
-[Live Demo](https://goldenowlrortest.vercel.app)
+Link deploy back-end: https://goldenowlrortest.onrender.com/api/v1/shoes
+
+(Because Heroku is no longer free, I deploy front-end to Vercel and back-end to Render)
+
+[My Live Demo](https://goldenowlrortest.vercel.app)
 # Guild to run project on local:
 P1: Clone project from this repository 
 `git clone https://github.com/luongphamho/goldenowlrortest.git`
