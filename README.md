@@ -8,22 +8,22 @@ Link deploy front-end: https://goldenowlrortest.vercel.app
 
 Link deploy back-end: https://goldenowlrortest.onrender.com/api/v1/shoes
 
-(Because Heroku is no longer free, I deploy front-end to Vercel and back-end to Render)
+(Because Heroku is no longer free, I deploy front-end to [Vercel](https://vercel.com) and back-end to [Render](https://render.com/))
 
 [My Live Demo](https://goldenowlrortest.vercel.app)
 # Guild to run project on local:
 - P1: Clone project from this repository 
 `git clone https://github.com/luongphamho/goldenowlrortest.git`
 
-- P2: Change .env file [./front-end/.env](./front-end/.env) to back-end local URL [default: `http://localhost:3000`] and [this section to your local PostgreSQL database](https://github.com/luongphamho/goldenowlrortest/blob/main/config/database.yml#L24)
+- P2: Change .env file [./front-end/.env](./front-end/.env) to back-end local URL [default: `http://localhost:3000/api/v1/shoes`], change [this section to your local PostgreSQL database config](https://github.com/luongphamho/goldenowlrortest/blob/main/config/database.yml#L24) and !IMPORTANT comment [this line](https://github.com/luongphamho/goldenowlrortest/blob/main/config/puma.rb#L33) it needs for deployment but on local it will make error when run.
 
-- P2: Run `rails bundle` and `rails server` to install package and start back-end side
+- P3: Run `bundle` and `rails server` to bundle gems and start back-end side
 
-- P3: Insert data to PostgreSQL database with file [scriptInsertSQL.sql](https://github.com/luongphamho/goldenowlrortest/blob/main/scriptInsertSQL.sql)
+- P4: Insert data to PostgreSQL database with file [scriptInsertSQL.sql](https://github.com/luongphamho/goldenowlrortest/blob/main/scriptInsertSQL.sql)
 
-- P4: Run `cd front-end` and `run yarn` or `npm install` to install package in front-end side
+- P5: Run `cd front-end` and `run yarn` or `npm install` to install package in front-end side
 
-- P5: Run `yarn dev` from front-end path to start project
+- P6: Run `yarn dev` from front-end path to start project front-end.
 # Technical stack:
 ### Back-end:
 - Ruby on rails, Rack-cors for CORS

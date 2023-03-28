@@ -33,7 +33,7 @@ export default function ProductList() {
       <div className="card__title">Our Products</div>
       <div className="card__body">
         <p>Loading...</p>
-        <p>Maybe you forget to run the server first</p>
+        <p>Please wait a bit for back-end response! Because of free deployment it will a bit slow</p>
       </div>
     </div>
   );
