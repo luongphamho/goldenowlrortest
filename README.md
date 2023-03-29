@@ -20,9 +20,12 @@ Make sure that you have installed ruby, rails, node and postgresql
 
 - Change [this section to your local PostgreSQL database config](https://github.com/luongphamho/goldenowlrortest/blob/main/config/database.yml#L24) and **!IMPORTANT** comment [this line](https://github.com/luongphamho/goldenowlrortest/blob/main/config/puma.rb#L33) it needs for deployment but on local it will make error when run.
 
-- Run `gem install bundler` and `bundle install` to install gem.
-
 - Insert data to PostgreSQL database with file [scriptInsertSQL.sql](https://github.com/luongphamho/goldenowlrortest/blob/main/scriptInsertSQL.sql)
+
+- Run `gem install bundler` and `bundle install` to install gems.
+
+- Run `rails server` to start back-end
+
 
 - Run `cd front-end` and `run yarn` or `npm install` to install package in front-end side
 
