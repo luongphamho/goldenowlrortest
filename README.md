@@ -12,18 +12,21 @@ Link deploy back-end: https://goldenowlrortest.onrender.com/api/v1/shoes
 
 [My Live Demo](https://goldenowlrortest.vercel.app)
 # Guild to run project on local:
-- P1: Clone project from this repository 
+Make sure that you have installed ruby, rails, node and postgresql
+- 1. Clone this repository using 
 `git clone https://github.com/luongphamho/goldenowlrortest.git`
 
-- P2: Change .env file [./front-end/.env](./front-end/.env) to back-end local URL [default: `http://localhost:3000/api/v1/shoes`], change [this section to your local PostgreSQL database config](https://github.com/luongphamho/goldenowlrortest/blob/main/config/database.yml#L24) and !IMPORTANT comment [this line](https://github.com/luongphamho/goldenowlrortest/blob/main/config/puma.rb#L33) it needs for deployment but on local it will make error when run.
+- 2. Change .env file [./front-end/.env](./front-end/.env) to back-end local URL [default: `http://localhost:3000/api/v1/shoes`]
 
-- P3: Run `bundle` and `rails server` to bundle gems and start back-end side
+- 3. change [this section to your local PostgreSQL database config](https://github.com/luongphamho/goldenowlrortest/blob/main/config/database.yml#L24) and **!IMPORTANT** comment [this line](https://github.com/luongphamho/goldenowlrortest/blob/main/config/puma.rb#L33) it needs for deployment but on local it will make error when run.
 
-- P4: Insert data to PostgreSQL database with file [scriptInsertSQL.sql](https://github.com/luongphamho/goldenowlrortest/blob/main/scriptInsertSQL.sql)
+- 4. Run `gem install bundler` and `bundle install` to install gem.
 
-- P5: Run `cd front-end` and `run yarn` or `npm install` to install package in front-end side
+- 5. Insert data to PostgreSQL database with file [scriptInsertSQL.sql](https://github.com/luongphamho/goldenowlrortest/blob/main/scriptInsertSQL.sql)
 
-- P6: Run `yarn dev` from front-end path to start project front-end.
+- 6. Run `cd front-end` and `run yarn` or `npm install` to install package in front-end side
+
+- 7. Run `yarn dev` from front-end path to start front-end.
 # Technical stack:
 ### Back-end:
 - Ruby on rails, Rack-cors for CORS
